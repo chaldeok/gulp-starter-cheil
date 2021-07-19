@@ -1,0 +1,55 @@
+.main-container {
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  // padding: 0;
+}
+
+.section {
+  width: 100%;
+}
+
+.img-basic {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.sm-btn-basic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 22px;
+  border: 2px solid #171717;
+  color: #171717;
+  margin: 30px 0 0;
+  @include adaptive-font(18, 16);
+
+  transition: background-color 0.23s ease-out;
+  &:hover,
+  &:focus {
+    background-color: lighten(#171717, 70%);
+  }
+  &:active {
+    background-color: lighten(#171717, 30%);
+  }
+}
+
+.tabs-title {
+  font-family: $font-title;
+  @include adaptive-font(38, 28);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.legal-text {
+  font-family: $font-text;
+  text-align: left;
+  color: #a0a0a0;
+  font-size: 12px;
+
+  a {
+    color: blue;
+  }
+}
